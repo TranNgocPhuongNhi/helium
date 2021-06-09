@@ -1,0 +1,573 @@
+:root {
+    --color-pink: #eb586f;
+    --color-white: rgb(255, 255, 255);
+    --color-gray: rgb(246, 246, 246);
+    --color-black-333333: rgb(51, 51, 51);
+    --color-black-282828: rgb(40, 40, 40);
+    --color-black-1d1d1d: rgb(29, 29, 29);
+    --color-black-585b60: rgb(88, 91, 96);
+    --color-black-595c61: rgb(88, 91, 95);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+}
+
+/* =========================== REUSE ========================= */
+
+.button {
+    color: var(--color-pink) !important;
+    padding: 18px 30px;
+    background-color: transparent;
+    border: 2px solid var(--color-pink);
+    font-size: 1.1rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--color-pink);
+    color: var(--color-white) !important;
+    text-decoration: none;
+}
+
+h4 {
+    color: #444;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* ============================== HEADER ============================= */
+.header_navbar {
+    /* background-color: #e4b1b9; */
+}
+
+.header_navbar_logo img {
+    width: 135px;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link{
+    font-family: rubik, sans-serif;
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.nav-link:hover{
+    color: var(--color-pink);
+    font-weight: normal;
+}
+
+.link-home{
+    color: var(--color-pink);
+    font-weight: normal;
+}
+
+.header_background {
+    text-align: center;
+    height: 474px;
+}
+
+/* .background_carousel {
+    display: none;
+} */
+
+.background_carousel img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    left: 10%;
+}
+
+.carousel_title {
+    font-size: 1.8rem;
+    font-weight:700;
+    color: var(--color-white);
+    margin-bottom: 15px;
+}
+
+.carousel_content {
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 60px;
+}
+
+.btn-carousel {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 10px;
+}
+
+.carousel_button--learnmore,
+.carousel_button--getstart {
+    border: 2px solid var(--color-white);
+    color: var(--color-white) !important;
+    font-weight: 500;
+}
+
+.carousel_button--learnmore:hover,
+.carousel_button--getstart:hover {
+    background-color: rgba(255, 255, 255 ,0.3);
+}
+
+.carousel-dot {
+    position: relative;
+    top: 50%;
+}
+
+.dot {
+    height: 4px;
+    width: 32px;
+    margin: 0 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-control {
+    margin-top: -18%;
+}
+
+.carousel-control a {
+    position: absolute;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    width: 15%;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+/** 
+* Scrolling CSS
+*/
+nav.scroll {
+    background-color:var(--color-white);
+    box-shadow: 0 3px 6px #e0e0e0;
+    
+}
+
+nav.scroll .nav-link {
+    color: var(--color-black-585b60);
+}
+
+
+/* =============================== ABOUT =============================== */
+#about {
+    background-color: var(--color-gray);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about_item {
+    max-width: 250px;
+    margin: 0 10px;
+}
+
+.about_item img{
+    width: 100px;
+}
+
+.about_item h4 {
+    margin: 8px 0;
+}
+
+.about_item p {
+    font-size: 0.8rem;
+    font-family: rubik, sans-serif;
+    line-height: 22px;
+}
+
+/* ================================ SERVICES ============================== */
+#services h1,
+#portfolio h1,
+#feature h1,
+#team h1,
+#pricing h1,
+#contact h1 {
+    text-align: center;
+    margin: 50px 0;
+    line-height: 38px;
+    font-size: 2.5rem;
+    color: var(--color-black-595c61);
+    font-weight: 700;
+}
+
+.services {
+    display: flex;
+}
+
+.services i {
+    color: var(--color-pink);
+    font-size: 2rem;
+}
+
+.service_title {
+    margin-bottom: 10px;
+}
+
+.service-item {
+    padding-left: 16px;
+}
+
+.item-flash {
+    padding-left: 40px;
+}
+
+.service-item p {
+    font-size: 0.8rem;
+    line-height: 2;
+}
+
+/* =============================== PORTFOLIO ============================ */
+#portfolio {
+    background-color: var(--color-gray);
+    padding: 20px 0;
+}
+
+.portfolio_choose {
+    text-align: center;
+}
+
+.portfolio_choose-link {
+    color: var(--color-black-1d1d1d) !important;
+    padding: 10px 30px;
+}
+
+.portfolio_choose_top,
+.portfolio_choose_bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* =================================== FEATURES ============================== */
+.feature-icon {
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: 50px;
+}
+
+
+/* =================================== COUNTER ============================== */
+#counter {
+    background-image: url(/resources/img/testimonial-bg.jpg);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.counter_item {
+    color: var(--color-white);
+    margin: 80px 0;
+    padding: 0 15px;
+}
+
+.counter_img i {
+    color: var(--color-pink);
+    font-size: 3rem;
+}
+
+.counter_line {
+    margin: 20px auto;
+    width: 25px;
+    border-color: #fff;
+}
+
+.counter_number-statistic {
+    padding: 15px 0 5px 0;
+}
+
+.counter_number-statistic h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.counter_title {
+    font-family: Rubik, sans-serif;
+    font-size: 0.9rem;
+}
+
+/* ============================= TEAM =================================== */
+#team {
+    background-color: var(--color-gray);
+    overflow: hidden;
+}
+
+/* ============================= PRICING =================================== */
+#pricing {
+
+}
+
+/* ============================= TESTIMONIAL =================================== */
+#testimonial {
+    background-image: url(/resources/img/testimonial-bg.jpg);
+}
+
+/* ============================= CONTACT US =================================== */
+#contact {
+    padding: 0 0 60px 0;
+}
+
+.contact_title,
+.contact-info {
+    font-weight: 650;
+    color: #444;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-pink);
+    padding: 10px;
+    font-size: .9rem;
+}
+
+.contact-form i {
+    padding: 0 16px 0 10px;
+}
+
+.contact-form-control {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.textarea {
+    border: 1px solid var(--color-pink);
+    padding: 16px 16px 16px 50px;
+    margin: 30px 0;
+}
+
+.textarea::placeholder {
+    color: #999;
+}
+
+.btn-mess {
+    padding: 10px 30px;
+    font-size: .9rem;
+    opacity: 0.8;
+}
+
+.contact-address,
+.tel-info,
+.email-info,
+.link-website,
+.social-links {
+    font-family: rubik, sans-serif;
+    font-size: 0.9em;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #444;
+}
+
+address {
+    margin: 0;
+}
+
+.tel-info a{
+    display: block;
+    color: #444;
+}
+
+.tel-info a:hover,
+.email-info:hover,
+.link-website:hover {
+    text-decoration: none;
+    color: #444;
+}
+
+.social-links li {
+    letter-spacing: 20px;
+}
+
+.social-links li:hover {
+    cursor: pointer;
+}
+
+.social-links li i {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* ============================= FOOTER =================================== */
+#footer {
+    background-color: var(--color-black-282828);
+    color: var(--color-white);
+}
+
+.footer {
+    padding: 30px 0;
+}
+
+.small-title {
+    color: var(--color-white);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.about-us-content {
+    font-size: .9rem;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.icon-round {
+    border: 1px solid var(--color-pink);
+    color: var(--color-pink);
+    font-size: 1.1rem;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    display: inline-block;
+    line-height: 35px;
+}
+
+.icon-facebook:hover {
+    background-color: #3B5998;
+    border: 1px solid #3B5998;
+    color: var(--color-white);
+}
+
+.icon-twitter:hover {
+    background-color: #55ACEE;
+    border: 1px solid #55ACEE;
+    color: var(--color-white);
+}
+
+.icon-linkedin:hover {
+    background-color: #007BB6;
+    border: 1px solid #007BB6;
+    color: var(--color-white);
+}
+
+.icon-ggp:hover {
+    background-color: #DD4B39;
+    border: 1px solid #3B5998;
+    color: var(--color-white);
+}
+
+
+.nav-item,
+.nav-link {
+    padding: 3px;
+}
+
+.nav-links-footer {
+    list-style: none;
+}
+
+.plain-flicker-gallery a img{
+    height: 60px;
+    width: 80px;
+    padding: 5px;
+}
+
+.subscribe-us {
+    background-color: var(--color-black-1d1d1d);
+    padding: 10px 16px;
+    width: 100%;
+    border-radius: none;
+    outline: none;
+    border: 1px solid var(--color-white);
+    color: var(--color-black-585b60);
+    font-size: .9rem;
+    font-family: rubik, sans-serif;
+}
+
+.subscribe-us::placeholder {
+    color: #999;
+}
+
+.subscribe-us:focus {
+    border: 1px solid var(--color-pink);
+}
+
+.btn-submit {
+    padding: 12px 30px;
+    font-size: .9rem;
+}
+
+#copyright {
+    background-color: var(--color-black-1d1d1d);
+    padding: 30px 0;
+}
+
+.copyright-text,
+.nav-footer {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.copyright-text {
+  margin: 6px 0 0 0;  
+}
+
+.copyright-text span {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: var(--color-pink);
+    padding: 8px 10px;
+    border-radius: 2px;
+}
+
+.back-to-top i {
+    font-size: 1.3rem;
+    color: var(--color-white);
+}
+
+
+/* =========================  ANIMATION  ======================= */
+/* Fading animation */
+.fade {
+    /* -webkit-animation-name: ease-in;
+    -webkit-animation-duration: 0.5s;
+    animation-name: ease-in;
+    animation-duration: 0.5s; */
+    transition: fade 2s linear;
+}
+  
+@-webkit-keyframes fade {
+    from {left: 0px;} 
+    to {left: 100%;}
+}
+
+@keyframes fade {
+    from {left: 0px;} 
+    to {left: 100%;}
+}

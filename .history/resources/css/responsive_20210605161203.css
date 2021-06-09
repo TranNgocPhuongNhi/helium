@@ -1,0 +1,29 @@
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+  
+/* tablets */
+@media (max-width: 991px) {
+
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+
+.footer-widget {
+    margin-bottom: 30px;
+}
+#copyright .nav-inline {
+    line-height: 28px;
+    text-align: left !important;
+}
+#copyright .nav-inline li a {
+    padding: 0px 0px 0px 4px;
+}
+}
