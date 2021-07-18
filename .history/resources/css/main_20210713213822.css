@@ -258,7 +258,7 @@ nav.scroll .nav-link {
     outline: none;
 }
 
-.choose-active{
+.portfolio_choose-link:nth-of-type(1) {
     background-color: #E63D4F;
 }
 

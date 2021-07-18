@@ -32,7 +32,7 @@ window.addEventListener("scroll", () => {
 
 // ================================= Portfolio ======================================
 const filter_btn = document.querySelectorAll('.portfolio_choose-link');
-const portfolio_items = document.querySelectorAll('.portfolio_choose_item');
+const portfolio_items = document.querySelectorAll('.portfolio_item');
 
 filter_btn.forEach( element => {
     element.addEventListener('click', function(event) {
@@ -41,15 +41,7 @@ filter_btn.forEach( element => {
         }
         this.classList.add('choose-active');
         
-        let portfolio_item = element.dataset.filter;
-        portfolio_items.forEach(function(ele) {
-            if(ele.dataset.item === portfolio_item || portfolio_item === 'all') {
-                ele.style.display = "block";
-            }
-            else {
-                ele.style.display = "none";
-            }
-        })
+        let portfolio_item = element.dataset.fil;
     })
 })
 

@@ -44,6 +44,7 @@ filter_btn.forEach( element => {
         let portfolio_item = element.dataset.filter;
         portfolio_items.forEach(function(ele) {
             if(ele.dataset.item === portfolio_item || portfolio_item === 'all') {
+                console.log(ele.dataset.item)
                 ele.style.display = "block";
             }
             else {

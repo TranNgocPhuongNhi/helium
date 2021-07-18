@@ -254,11 +254,11 @@ nav.scroll .nav-link {
 .portfolio_choose-link {
     color: var(--color-black-1d1d1d) !important;
     padding: 10px 30px;
-    margin-bottom: 5px;
+    margin-bottom: 5planningpx;
     outline: none;
 }
 
-.choose-active{
+.portfolio_choose-link:nth-of-type(1) {
     background-color: #E63D4F;
 }
 
