@@ -21,7 +21,7 @@ window.addEventListener("scroll",() => {
 // ========================================= Slider Header =====================================
 const bgHeader = document.getElementById('header_carousel')
 const leftBtn = document.getElementById('left')
-const rightBtn = document.getElementById('right')
+const right = document.getElementById('right')
 
 const bgItem = document.querySelectorAll('.background_carousel-item')
 
@@ -55,8 +55,8 @@ leftBtn.addEventListener("click", () => {
     resetInterval()
 })
 
-rightBtn.addEventListener("click", () => {
-    idx++
+leftBtn.addEventListener("click", () => {
+    idx--
     changeBackground()
     resetInterval()
 })

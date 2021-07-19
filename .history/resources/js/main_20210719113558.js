@@ -18,50 +18,6 @@ window.addEventListener("scroll",() => {
     }
 })
 
-// ========================================= Slider Header =====================================
-const bgHeader = document.getElementById('header_carousel')
-const leftBtn = document.getElementById('left')
-const rightBtn = document.getElementById('right')
-
-const bgItem = document.querySelectorAll('.background_carousel-item')
-
-let idx = 0;
-let interval = setInterval(run, 5000)
-
-function run() {
-    idx++
-    changeBackground()
-}
-
-function changeBackground() {
-    if(idx > bgItem.length - 1) {
-        idx = 0
-    }
-    else if(idx < 0) {
-        idx = bgItem.length - 1
-    }
-    bgHeader.style.transform = `translateX(${-idx * 100}vw)`
-
-}
-
-function resetInterval() {
-    clearInterval(interval)
-    interval = setInterval(run, 5000)
-}
-
-leftBtn.addEventListener("click", () => {
-    idx--
-    changeBackground()
-    resetInterval()
-})
-
-rightBtn.addEventListener("click", () => {
-    idx++
-    changeBackground()
-    resetInterval()
-})
-
-
 // =========================================== To the top ===================================
 const backToTop = document.querySelector('.back-to-top');
 window.addEventListener("scroll", () => {
@@ -96,6 +52,9 @@ filter_btn.forEach( element => {
         })
     })
 })
+
+// ========================================= Slider =====================================
+
 
 
 // ========================================= Owl Carousel Testimonial =====================================

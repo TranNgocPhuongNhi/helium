@@ -84,7 +84,7 @@ h4 {
 #header_carousel {
     display: flex;
     transform: translateX(0);
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .background_carousel-item img {
@@ -163,26 +163,16 @@ h4 {
 
 .carousel-control {
     display: flex;
-    color: var(--color-white);
-    cursor: pointer;
-}
-
-#left,
-#right {
     position: absolute;
     top: 50%;
-    padding: 0 8rem;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+    color: var(--color-white);
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 #left:hover,
 #right:hover {
     opacity: 1;
-}
-
-#right {
-    right: 0;
 }
 
 /** 

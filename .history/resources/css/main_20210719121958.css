@@ -84,7 +84,7 @@ h4 {
 #header_carousel {
     display: flex;
     transform: translateX(0);
-    transition: transform 1s ease-in-out;
+    transition: transform 1.2s ease-in-out;
 }
 
 .background_carousel-item img {
