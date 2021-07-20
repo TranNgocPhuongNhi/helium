@@ -129,6 +129,12 @@ h4 {
     margin: 0 10px;
 }
 
+.carousel-button {
+    display: flex;
+    flex-wrap: wrap;
+    al
+}
+
 .carousel_button--learnmore,
 .carousel_button--getstart {
     border: 2px solid var(--color-white);

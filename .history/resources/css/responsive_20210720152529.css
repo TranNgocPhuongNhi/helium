@@ -126,16 +126,13 @@
 
     .carousel_content {
         font-size: .9rem;
-        width: 70%;
+        width: 60%;
+        margin-bottom: 10px;
     }
 
     .btn-carousel {
         padding: 6px 40px;
         font-size: 0.7rem;
-    }
-
-    .carousel-control > i {
-        padding: 0 1rem;
     }
 
     #services h1,

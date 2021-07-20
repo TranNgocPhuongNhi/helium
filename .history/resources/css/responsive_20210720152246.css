@@ -68,10 +68,6 @@
         font-size: 1rem;
     }
 
-    .carousel-control > i{
-        padding: 0 3rem;
-    }
-
     .portfolio_choose-img img {
         width: 360px;
     }
@@ -80,7 +76,13 @@
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .carousel_title {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+    }
+
+    .carousel_content {
+        font-size: 0.8rem;
+        width: 60%;
+        margin-bottom: 10px;
     }
 
     .btn-carousel {
@@ -121,21 +123,18 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .carousel_title {
-        font-size: 1.4rem;
+        font-size: .9rem;
     }
 
     .carousel_content {
-        font-size: .9rem;
-        width: 70%;
+        font-size: 0.7rem;
+        width: 60%;
+        margin-bottom: 10px;
     }
 
     .btn-carousel {
         padding: 6px 40px;
         font-size: 0.7rem;
-    }
-
-    .carousel-control > i {
-        padding: 0 1rem;
     }
 
     #services h1,
