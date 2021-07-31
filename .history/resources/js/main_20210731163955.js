@@ -111,8 +111,8 @@ $(document).ready(function() {
         }
     })
 
-    $('.portfolio_choose-link').click(function() {
-        $(this).addClass('choose-active').siblings().removeClass('choose-active')
+    $('.list').click(function() {
+        $(this).addClass('active').siblings().removeClass('active')
     })
 })
 

@@ -75,7 +75,6 @@ window.addEventListener("scroll", () => {
 })
 
 // ================================= Portfolio ======================================
-/*------------ Cách 1 ------------*/
 // const filter_btn = document.querySelectorAll('.portfolio_choose-link');
 // const portfolio_items = document.querySelectorAll('.portfolio_choose_item');
 
@@ -97,25 +96,6 @@ window.addEventListener("scroll", () => {
 //         })
 //     })
 // })
-
-/*---------- Cách 2 -----------*/
-$(document).ready(function() {
-    $('.portfolio_choose-link').click(function() {
-        const value = $(this).attr('data-filter');
-        if(value == 'all') {
-            $('.portfolio_item').show('1000');
-        }
-        else {
-            $('.portfolio_item').not('.'+value).hide('1000');
-            $('.portfolio_item').filter('.'+value).show('1000');
-        }
-    })
-
-    $('.portfolio_choose-link').click(function() {
-        $(this).addClass('choose-active').siblings().removeClass('choose-active')
-    })
-})
-
 
 
 // ========================================= Owl Carousel Testimonial =====================================
